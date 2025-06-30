@@ -1,0 +1,35 @@
+# 🚫 Ignore Python environment + compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# 🧪 Ignore Jupyter and logs
+*.ipynb
+*.log
+
+# 📦 Ignore virtual environments
+venv/
+.env/
+.env
+
+# 🧠 Ignore model files (optional)
+*.h5
+*.pkl
+*.joblib
+
+# 🛠 Build artifacts
+build/
+dist/
+*.egg-info/
+
+# 🧾 OS files
+.DS_Store
+Thumbs.db
+
+# 📁 VSCode or PyCharm settings (optional)
+.vscode/
+.idea/
+
+# 🔍 Coverage reports
+htmlcov/
+.coverage
