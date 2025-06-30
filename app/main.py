@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app import stock_data, compare_data, chat  # 👈 include chat
+from app import stock_data, compare_data, chat , predict # 👈 include chat
 
 app = FastAPI()
 
@@ -19,6 +19,7 @@ app.add_middleware(
 app.include_router(stock_data.router)
 app.include_router(compare_data.router)
 app.include_router(chat.router)  # 👈 include chat router
+app.include_router(predict.router)  # 👈 include predict router
 
 @app.get("/")
 def root():
