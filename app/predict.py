@@ -10,7 +10,7 @@ class PredictInput(BaseModel):
     low: float
     volume: float
 
-@router.post("/")
+@router.post("/predict")
 def predict_price(data: PredictInput):
     # Replace this with ML model logic if available
     predicted = (data.open + data.high + data.low + data.volume) / 4
